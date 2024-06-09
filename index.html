@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+          rel="stylesheet">
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./public/style.css">
+</head>
+<body>
+<div class="arta">
+    <div class="preloader" id="preloader">Loading...</div>
+    <div class="arta__innerBg">
+        <div class="arta__innerShadow">
+            <button class="close" id="artaClose">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="Cross" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.5158 9.89951L18.6248 1.79052L19.2216 2.38732L11.1126 10.4963L19.5 18.8837L18.8837 19.5L10.4963 11.1126L2.38732 19.2216L1.79052 18.6248L9.89951 10.5158L1.5 2.11628L2.11628 1.5L10.5158 9.89951Z"
+                          stroke="white" stroke-opacity="1" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <main class="main">
+                <section class="features">
+                    <div class="features__inner">
+                        <h1 data-i18n="Get Unlimited <br>Access"></h1>
+                        <ul class="features__list">
+                            <li class="features__item">
+                                <div class="features__figure">
+                                    <img class="features__image" src="./public/feature1.png" alt="Unlimited Art <br>Creation">
+                                </div>
+                                <div class="features__titleBg">
+                                    <h3 class="features__title" data-i18n="Unlimited Art <br>Creation"></h3>
+                                </div>
+                            </li>
+                            <li class="features__item">
+                                <div class="features__figure">
+                                    <img class="features__image" src="./public/feature2.png" alt="Exclusive <br>Styles">
+                                </div>
+                                <div class="features__titleBg">
+                                    <h3 class="features__title" data-i18n="Exclusive <br>Styles"></h3>
+                                </div>
+                            </li>
+                            <li class="features__item">
+                                <div class="features__figure">
+                                    <img class="features__image" src="./public/feature3.png" alt="Magic Avatars <br>With 20% Off">
+                                </div>
+                                <div class="features__titleBg">
+                                    <h3 class="features__title" data-i18n="Magic Avatars <br>With 20% Off"></h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="price">
+                    <ul class="price__list">
+                        <!-- Лучше строить массивом -->
+                        <li class="artaButton price__item  price__item--active" data-id="1" data-href="https://apple.com/">
+                            <div class="price__bestIcon" data-i18n="BEST OFFER">BEST OFFER</div>
+                            <div class="price__access">
+                                <p class="price__title" data-i18n="YEARLY ACCESS"></p>
+                                <p class="price__description" data-price="$39.99"
+                                   data-i18n="Just {{price}} per year"></p>
+                            </div>
+                            <div class="price__cost">
+                                <p class="price__amount" data-price="$0.48" data-i18n="{{price}} <br>per week"></p>
+                            </div>
+                        </li>
+                        <li class="artaButton price__item price__item--best" data-id="2" data-href="https://google.com/">
+                            <div class="price__access">
+                                <p class="price__title" data-i18n="WEEKLY ACCESS"></p>
+                            </div>
+                            <div class="price__cost">
+                                <p
+                                        class="price__amount"
+                                        data-i18n="{{price}} <br>per week"
+                                        data-price="$6.99"
+                                ></p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="artaButton price__nextStep">Continue</button>
+                </section>
+            </main>
+            <footer class="footer">
+                <section class="privacy">
+                    <ul class="privacy__list">
+                        <li class="privacy__item">
+                            <a class="privacy__link" data-i18n="Terms of Use" href="#"></a>
+                        </li>
+                        <li class="privacy__item">
+                            <a class="privacy__link" data-i18n="Privacy Policy" href="#"></a>
+                        </li>
+                        <li class="privacy__item">
+                            <a class="privacy__link" data-i18n="Restore" href="#"></a>
+                        </li>
+                    </ul>
+                </section>
+            </footer>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
