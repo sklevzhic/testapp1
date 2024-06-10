@@ -29,6 +29,7 @@ body {
     line-height: 1em;
     border: none;
     border-radius: var(--border-radius-big-button);
+    cursor: pointer;
 }
 
 .preloader {
